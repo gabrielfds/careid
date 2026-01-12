@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Dados - CareID</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #0A4DA2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background: #2ECC71;
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 6px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Editar Dados</h2>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Dados da criança</h3>
+
+    <input type="text" placeholder="Nome da criança" value="João Silva">
+    <input type="date" value="2018-03-12">
+
+    <select>
+      <option>Autismo</option>
+      <option>TDAH</option>
+      <option>Epilepsia</option>
+      <option>Alergia</option>
+      <option>Surdez</option>
+      <option>Visual</option>
+      <option>Idoso</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <h3>Contato do responsável</h3>
+
+    <input type="text" placeholder="Nome do responsável" value="Maria Silva">
+    <input type="text" placeholder="Telefone" value="(11) 99999-9999">
+
+    <textarea rows="3">Meu filho precisa de ajuda para voltar para casa.</textarea>
+  </div>
+
+  <div class="card">
+    <button>Salvar alterações</button>
+  </div>
+
+</div>
+
+</body>
+</html>

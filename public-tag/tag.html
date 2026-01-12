@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CareID - Identificação</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 30px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      color: #0A4DA2;
+    }
+
+    .highlight {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .contact {
+      background: #2ECC71;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>CareID</h1>
+
+    <p class="highlight">João Silva</p>
+    <p>Condição: Autismo</p>
+
+    <p><strong>Mensagem:</strong><br>
+    Meu filho precisa de ajuda para voltar para casa.</p>
+
+    <div class="contact">
+      📞 Contato: (11) 99999-9999
+    </div>
+  </div>
+
+  <footer>
+    Amor, tecnologia e segurança.
+  </footer>
+<script src="dados-publicos.js"></script>
+
+<script>
+  document.querySelector(".card").innerHTML = `
+    <h1>CareID</h1>
+
+    <p class="highlight">${dados.nome}</p>
+    <p>Condição: ${dados.condicao}</p>
+
+    <p><strong>Mensagem:</strong><br>
+    ${dados.mensagem}</p>
+
+    <div class="contact">
+      📞 Contato: ${dados.telefone}
+    </div>
+  `;
+</script>
+
+</body>
+</html>
