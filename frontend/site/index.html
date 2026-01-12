@@ -7,60 +7,89 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       background: #ffffff;
       color: #222;
     }
 
     header {
-      background: #0A4DA2;
+      background: linear-gradient(135deg, #0A4DA2, #1E90FF);
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
       font-weight: bold;
+      font-size: 15px;
     }
 
     .hero {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
+      background: #f5f8ff;
     }
 
     .hero h2 {
-      font-size: 32px;
+      font-size: 36px;
       margin-bottom: 20px;
+      color: #0A4DA2;
     }
 
     .hero p {
       font-size: 18px;
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
+      color: #444;
+      line-height: 1.6;
     }
 
     .cta {
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
     .cta a {
       background: #2ECC71;
       color: #000;
-      padding: 12px 20px;
-      border-radius: 6px;
+      padding: 14px 26px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
+    }
+
+    .features {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .feature {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    }
+
+    .feature h3 {
+      color: #0A4DA2;
+      margin-bottom: 10px;
     }
 
     footer {
       background: #111;
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 14px;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -82,15 +111,64 @@
 </header>
 
 <section class="hero">
+  <section class="story">
+  <img 
+    src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+    alt="Família cuidando de uma criança"
+    style="width:100%; max-width:700px; border-radius:20px; margin-bottom:30px;"
+  >
+
+  <h3>Cuidar de quem você ama é nossa missão</h3>
+
+  <p>
+    A CareID nasceu para ajudar famílias a se sentirem mais seguras no dia a dia.
+    Cada detalhe foi pensado para proteger, acolher e trazer tranquilidade.
+  </p>
+</section>
+
   <h2>Proteção inteligente para quem você ama</h2>
   <p>
-    A CareID é uma solução de identificação com tecnologia NFC para crianças, idosos
-    e pessoas com necessidades especiais. Segurança, cuidado e tranquilidade no dia a dia.
+    A CareID é uma solução de identificação com tecnologia NFC para crianças,
+    idosos e pessoas com necessidades especiais. Mais segurança, mais cuidado,
+    mais tranquilidade para as famílias.
   </p>
 
   <div class="cta">
-    <a href="pages/como-funciona.html">Saiba como funciona</a>
+    <a href="pages/como-funciona.html">Veja como funciona</a>
   </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>Identificação rápida</h3>
+    <p>Qualquer celular pode acessar as informações da tag.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Mais segurança</h3>
+    <p>Contato imediato com o responsável.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Produto personalizado</h3>
+    <p>Nome, condição e mensagem personalizada.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Inclusão e cuidado</h3>
+    <p>Tecnologia feita para proteger pessoas.</p>
+  </div>
+</section>
+<section class="story">
+  <h3>Histórias que inspiram cuidado</h3>
+
+  <p><strong>Maria, mãe do João (Autismo)</strong><br>
+  “A CareID me trouxe mais tranquilidade. Saber que qualquer pessoa pode me
+  encontrar se algo acontecer com meu filho não tem preço.”</p>
+
+  <p><strong>Carlos, pai da Ana (Alergia)</strong><br>
+  “Hoje eu me sinto mais seguro. A CareID é simples, mas faz uma diferença enorme
+  na nossa vida.”</p>
 </section>
 
 <footer>
